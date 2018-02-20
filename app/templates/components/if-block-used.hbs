@@ -1,0 +1,11 @@
+{{yield (slot-hash
+  slotName
+  (component "yield-block"
+    register=(action 'register')
+    unregister=(action 'unregister')
+  )
+)}}
+
+{{#unless isActivated}}
+  {{yield to="inverse"}}
+{{/unless}}

@@ -2,6 +2,16 @@
   <li>First name: {{firstName}}</li>
   <li>Last name: {{lastName}}</li>
   <li>
-    {{yield (hash item=(component "yield-block"))}}
+    {{#if-block-used 'age' as |block|}}
+      {{yield block}}
+    {{else}}
+      Default for age
+    {{/if-block-used}}
+
+    {{#if-block-used 'extra' as |block|}}
+      {{yield block}}
+    {{else}}
+      Default for extra
+    {{/if-block-used}}
   </li>
 </ul>
