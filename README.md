@@ -1,7 +1,6 @@
 # ember-parent-exten-component-template
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Experimental repo for extend parent component 
 
 ## Prerequisites
 
